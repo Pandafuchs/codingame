@@ -8,3 +8,15 @@ function is_anagram($a, $b) {
 	return '0';
 }
 echo is_anagram($A, $B);
+
+
+//Vielleicht auch das hier
+fscanf(STDIN, "%d", $N);
+for ($i = 0; $i < $N; $i++) {
+    fscanf(STDIN, "%s", $W);
+    if (strrev($W) === $W) {
+        echo 'true' . "\n";
+    } else {
+        echo 'false'. "\n";
+    }
+}
