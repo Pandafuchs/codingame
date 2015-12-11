@@ -1,0 +1,1 @@
+<?fscanf(STDIN,"%s %s",$a,$b);echo$a&$b;

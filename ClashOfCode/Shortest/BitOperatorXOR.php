@@ -1,0 +1,1 @@
+<?fscanf(STDIN,"%s %s",$a,$b);echo str_pad(decbin(bindec($a)^bindec($b)),strlen($a),'0',STR_PAD_LEFT);
