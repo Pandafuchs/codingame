@@ -1,7 +1,6 @@
 var i = 0, A = "", B = "", N = parseInt(readline());
-for (; i < N; i++) 
-{
-    A += i%2 == 0 ? readline()+"\n" : '';
-    B += i%2 != 0 ? readline()+"\n" : '';
+for (; i < N; i++) {
+	r=readline;
+	i%2 ? B+=r() + '\n': A += r()+ '\n'
 }
 print((A+B).substr(0,(A+B).length - 1));
