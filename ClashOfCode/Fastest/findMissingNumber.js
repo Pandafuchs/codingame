@@ -1,7 +1,4 @@
-/**
- * Auto-generated code below aims at helping you parse
- * the standard input according to the problem statement.
- **/
+
 function myF(arr)
 {
     for(var i = 0; i < arr.length; i++)
