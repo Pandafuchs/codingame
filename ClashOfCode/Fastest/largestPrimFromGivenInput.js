@@ -1,0 +1,1 @@
+function p(r){if(f=!1,r%1||2>r)return f;for(c=2;c<=Math.sqrt(r);c++)if(r%c==0)return f;return!0}for(h=parseInt,r=readline,e=0,N=h(r()),i=0;i<N;i++)M=h(r()),p(M)&&M>e&&(e=M);print(e);
