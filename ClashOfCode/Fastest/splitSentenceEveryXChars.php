@@ -1,14 +1,11 @@
-<?php
-$sentence = stream_get_line(STDIN, 256, "\n");
+<?
+$s = str_replace(' ', '', stream_get_line(STDIN, 255, "\n"));
 fscanf(STDIN, "%d",
-    $col
+    $c
 );
-$sentence = str_replace(' ', '', $sentence);
-
-while(strlen($sentence) > 0)
+while(strlen($s) > 0)
 {
-    echo substr($sentence, 0, $col)."\n";
-    $sentence = substr($sentence, $col);
+    echo substr($s, 0, $c)."\n";
+    $s = substr($s, $c);
 }
-
 ?>
