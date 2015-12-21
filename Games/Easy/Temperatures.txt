@@ -1,0 +1,27 @@
+<?php
+fscanf(STDIN, "%d",
+    $n // the number of temperatures to analyse
+);
+$temps = stream_get_line(STDIN, 256, "\n"); // the n temperatures expressed as integers ranging from -273 to 5526
+
+if($n == 0) die('0');
+
+
+$temps = explode(' ', $temps);
+
+$closestToZero = 999999;
+
+foreach($temps as $value)
+{
+    if( abs($value) < abs($closestToZero) )
+    {
+        $closestToZero = $value;
+    }
+    else if(abs($value) == abs($closestToZero) && $value > 0)
+    {
+        $closestToZero = $value;
+    }
+}
+
+echo($closestToZero);
+?>
